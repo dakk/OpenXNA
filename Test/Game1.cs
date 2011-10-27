@@ -4,6 +4,7 @@ using System.Linq;
 using Microsoft.Xna.Framework;
 using Microsoft.Xna.Framework.Graphics;
 using Microsoft.Xna.Framework.Content;
+using Microsoft.Xna.Framework.Input;
 
 /*using Microsoft.Xna.Framework.GamerServices;
 using Microsoft.Xna.Framework.Input;
@@ -69,6 +70,12 @@ namespace BoxTest
         /// <param name="gameTime">Provides a snapshot of timing values.</param>
         protected override void Update(GameTime gameTime)
         {
+			KeyboardState kstate = Keyboard.GetState();
+
+            if (kstate.IsKeyDown(Keys.Left))
+            {
+				Console.WriteLine("KeyPressed");
+            }
 
             // Update base game
             base.Update(gameTime);
