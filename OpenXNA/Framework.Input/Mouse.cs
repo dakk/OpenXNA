@@ -13,14 +13,15 @@ namespace Microsoft.Xna.Framework.Input
 		
 		public static MouseState GetState ()
 		{
-			var mouse = OpenTK.Input.Mouse.GetState();
+			var mouse = OpenTK.Input.Mouse.GetState(0);
 			
-			
-			return new MouseState(mouse.X, mouse.Y, 0, (ButtonState) (mouse.LeftButton), 
+			return new MouseState(0, 0, 0, ButtonState.Released, ButtonState.Released, ButtonState.Released, ButtonState.Released, ButtonState.Released);
+			/*return new MouseState(mouse.X, mouse.Y, 0, (ButtonState) (mouse.LeftButton), 
 			                      (ButtonState) (mouse.MiddleButton),
 			                      (ButtonState) (mouse.RightButton),
 			                      (ButtonState) (ButtonState.Released),
 			                      (ButtonState) (ButtonState.Released));
+			*/
 		}
 	}
 }

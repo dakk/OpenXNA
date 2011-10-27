@@ -1,5 +1,4 @@
 using System;
-using Tao;
 using OpenTK.Input;
 
 namespace Microsoft.Xna.Framework.Input

@@ -26,7 +26,7 @@ namespace Microsoft.Xna.Framework.Graphics
 		                   Rectangle destinationRectangle,
 		                   Color color )
 		{
-			Rectangle d = destinationRectangle;
+			//Rectangle d = destinationRectangle;
 			
 		}
 		
