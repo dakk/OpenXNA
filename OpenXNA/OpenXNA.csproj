@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="3.5" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.21022</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{E9E0026C-E5BE-4E1F-9030-645A426BD7F8}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <RootNamespace>OpenXNA</RootNamespace>
+    <AssemblyName>OpenXNA</AssemblyName>
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug</OutputPath>
+    <DefineConstants>DEBUG</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <ConsolePause>false</ConsolePause>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>none</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Release</OutputPath>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <ConsolePause>false</ConsolePause>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="OpenTK.GLControl, Version=1.0.0.0, Culture=neutral, PublicKeyToken=bad199fe84eb3df4">
+      <Package>/home/dak/Svn/opentk/Binaries/OpenTK/Release/OpenTK.GLControl.dll</Package>
+    </Reference>
+    <Reference Include="OpenTK.Compatibility, Version=1.0.0.0, Culture=neutral, PublicKeyToken=bad199fe84eb3df4">
+      <Package>/home/dak/Svn/opentk/Binaries/OpenTK/Release/OpenTK.Compatibility.dll</Package>
+    </Reference>
+    <Reference Include="OpenTK, Version=1.0.0.0, Culture=neutral, PublicKeyToken=bad199fe84eb3df4">
+      <Package>/home/dak/Svn/opentk/Binaries/OpenTK/Release/OpenTK.dll</Package>
+    </Reference>
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Net" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AssemblyInfo.cs" />
+    <Compile Include="Framework\Color.cs" />
+    <Compile Include="Framework\ContainmentType.cs" />
+    <Compile Include="Framework\CurveContinuity.cs" />
+    <Compile Include="Framework\CurveLoopType.cs" />
+    <Compile Include="Framework\CurveTangent.cs" />
+    <Compile Include="Framework\DisplayOrientation.cs" />
+    <Compile Include="Framework\Game.cs" />
+    <Compile Include="Framework\GameComponentCollection.cs" />
+    <Compile Include="Framework\GameServiceContainer.cs" />
+    <Compile Include="Framework\GameTime.cs" />
+    <Compile Include="Framework\GameWindow.cs" />
+    <Compile Include="Framework\GraphicsDeviceManager.cs" />
+    <Compile Include="Framework\IGraphicsDeviceManager.cs" />
+    <Compile Include="Framework\LaunchParameters.cs" />
+    <Compile Include="Framework\PlaneIntersectionType.cs" />
+    <Compile Include="Framework\PlayerIndex.cs" />
+    <Compile Include="Framework\Point.cs" />
+    <Compile Include="Framework\Rectangle.cs" />
+    <Compile Include="Framework\Vector2.cs" />
+    <Compile Include="Framework\Vector3.cs" />
+    <Compile Include="Framework\GameWindowOpenTk.cs" />
+    <Compile Include="Graphics\BasicEffect.cs" />
+    <Compile Include="Graphics\Effect.cs" />
+    <Compile Include="Graphics\GraphicsAdapter.cs" />
+    <Compile Include="Graphics\GraphicsDevice.cs" />
+    <Compile Include="Graphics\GraphicsProfile.cs" />
+    <Compile Include="Graphics\GraphicsResource.cs" />
+    <Compile Include="Graphics\IEffectFog.cs" />
+    <Compile Include="Graphics\IEffectLights.cs" />
+    <Compile Include="Graphics\IEffectMatrices.cs" />
+    <Compile Include="Graphics\IGraphicsDeviceService.cs" />
+    <Compile Include="Graphics\PresentationParameters.cs" />
+    <Compile Include="Graphics\SpriteBatch.cs" />
+    <Compile Include="Graphics\Texture.cs" />
+    <Compile Include="Graphics\Texture2D.cs" />
+    <Compile Include="Graphics\IPackedVector.cs" />
+    <Compile Include="Framework\Content\ContentManager.cs" />
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <ItemGroup>
+    <Folder Include="Framework\" />
+    <Folder Include="Graphics\" />
+    <Folder Include="Framework\Content\" />
+  </ItemGroup>
+</Project>

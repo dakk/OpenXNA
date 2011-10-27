@@ -1,0 +1,30 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 10.00
+# Visual Studio 2008
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OpenXNA", "OpenXNA\OpenXNA.csproj", "{E9E0026C-E5BE-4E1F-9030-645A426BD7F8}"
+EndProject
+Project("{9344bdbb-3e7f-41fc-a0dd-8665d75ee146}") = "Packages", "Packages.mdproj", "{A67A7136-C5E1-4ACE-B4F1-97E0A1C3100F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Test", "Test\Test.csproj", "{466F1691-7001-45EC-9469-5D4B8656A862}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{466F1691-7001-45EC-9469-5D4B8656A862}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{466F1691-7001-45EC-9469-5D4B8656A862}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{466F1691-7001-45EC-9469-5D4B8656A862}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{466F1691-7001-45EC-9469-5D4B8656A862}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A67A7136-C5E1-4ACE-B4F1-97E0A1C3100F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A67A7136-C5E1-4ACE-B4F1-97E0A1C3100F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E9E0026C-E5BE-4E1F-9030-645A426BD7F8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E9E0026C-E5BE-4E1F-9030-645A426BD7F8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E9E0026C-E5BE-4E1F-9030-645A426BD7F8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E9E0026C-E5BE-4E1F-9030-645A426BD7F8}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(MonoDevelopProperties) = preSolution
+		StartupItem = OpenXNA\OpenXNA.csproj
+	EndGlobalSection
+EndGlobal
