@@ -6,11 +6,13 @@ using Microsoft.Xna.Framework.Graphics;
 using Microsoft.Xna.Framework.Content;
 using Microsoft.Xna.Framework.Input;
 
-/*using Microsoft.Xna.Framework.GamerServices;
+/*
+using Microsoft.Xna.Framework.GamerServices;
 using Microsoft.Xna.Framework.Input;
 using Microsoft.Xna.Framework.Input.Touch;
 using Microsoft.Xna.Framework.Media;
 */
+
 namespace XAlchemist
 {
     /// <summary>
@@ -30,7 +32,8 @@ namespace XAlchemist
         /*private SpriteFont font;
         private SpriteFont font2;
         */
-		private int sepX;
+
+	private int sepX;
         private int sepY;
         private TimeSpan endTime;
         private enum GameState { PRESENTATION, MAIN, PLAY, OVER, EXIT };
